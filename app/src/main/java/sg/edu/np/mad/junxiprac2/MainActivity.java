@@ -7,7 +7,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
 import android.widget.Button;
-
+import android.widget.Toast;
 
 
 public class MainActivity extends AppCompatActivity {
@@ -42,6 +42,7 @@ public class MainActivity extends AppCompatActivity {
                 Button followBtn = findViewById(R.id.followBtn);
                 if (student1.followed){
                     followBtn.setText(R.string.follow);
+                    Toast toast= Toast.makeText(MainActivity.this,"Followed",Toast.LENGTH_SHORT);
                 } else {
                     followBtn.setText(R.string.unfollow);
                 }
